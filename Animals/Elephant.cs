@@ -2,14 +2,18 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    class Elephant: Animal
+    class Elephantidae: Animal
     {
         public string tuskSize { get; set; }
-        public string color {get; set; }      
+        public string color {get; set; }  
 
-        public override void description ()
+        public Elephantidae ()
         {
-            Console.WriteLine(" ");
+            this.name = "Lucky";
         }
+        public override string description ()
+        {
+            return $"{base.description()}\n This Indian Elephant is known for it's {this.color} skin, {this.tuskSize} tusks, and peaceful ways.";
+        }    
     }
 }

@@ -6,16 +6,20 @@ namespace Zoolandia.Animals
     {
         public string name { get; set; }
         public string height {get; set; }
-        public string weight {get; set; }
         public string origin {get; set; }        
 
         public static void sleep ()
         {
-            Console.WriteLine("Animal is now sleeping");
+            Console.WriteLine("Animal is now sleeping.");
         }
-        public virtual void description ()
+
+        public static void eating ()
         {
-            Console.WriteLine(" ");
+            Console.WriteLine("Animal is eating its favorite meal.");
+        }
+        public virtual string description ()
+        {
+            return $"{this.name} lives in Zoolandia.";
         }
     }
 }
