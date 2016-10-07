@@ -24,6 +24,8 @@ namespace Zoolandia
 
                     };
                     Console.WriteLine(animalInstance.description());
+                    // Badger honeyBadger = new Badger();
+                    // Console.WriteLine(honeyBadger.age);
                     break;
 
                 case "elephant":
@@ -37,6 +39,8 @@ namespace Zoolandia
                         color = args[6]
                     };
                     Console.WriteLine(animalInstance.description());
+                    // Elephant indianElephant = new Elephant();
+                    // Console.WriteLine(indianElephant.age);
                     break;
 
                 case "wolf":
@@ -50,6 +54,8 @@ namespace Zoolandia
                         gender = args[6]
                     };
                     Console.WriteLine(animalInstance.description());
+                    // Wolf alaskanWolf = new Wolf();
+                    // Console.WriteLine(alaskanWolf.age);
                     break;
             }
         }
