@@ -6,7 +6,9 @@ namespace Zoolandia.Animals
     {
         public string name { get; set; }
         public string height {get; set; }
-        public string origin {get; set; }        
+        public string origin {get; set; }
+        public string playful {get; set;}        
+        public int age {get; set;}
 
         public static void sleep ()
         {
