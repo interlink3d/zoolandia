@@ -7,9 +7,9 @@ namespace Zoolandia.Animals
         public string aggressive { get; set; }
         public string diet {get; set; }      
 
-        public override void description ()
+        public override string description ()
         {
-            Console.WriteLine(" ");
+            return $"{base.description()}\n The Honey Badger is known for it's {this.aggressive} mentality and eating {this.diet}.";
         }
     }
 }

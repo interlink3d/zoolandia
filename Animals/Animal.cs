@@ -9,13 +9,9 @@ namespace Zoolandia.Animals
         public string weight {get; set; }
         public string origin {get; set; }        
 
-        public static void sleep ()
+        public virtual string description ()
         {
-            Console.WriteLine("Animal is now sleeping");
-        }
-        public virtual void description ()
-        {
-            Console.WriteLine(" ");
+            return $"{this.name} resides in {this.origin} and averages {this.weight} and {this.height}.";
         }
     }
 }

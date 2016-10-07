@@ -7,9 +7,9 @@ namespace Zoolandia.Animals
         public string tuskSize { get; set; }
         public string color {get; set; }      
 
-        public override void description ()
+        public override string description ()
         {
-            Console.WriteLine(" ");
+            return $"{base.description()}\n The Indian Elephant is known for it's {this.color} skin, {this.tuskSize} tusks, and peaceful ways.";
         }
     }
 }

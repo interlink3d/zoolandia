@@ -7,9 +7,9 @@ namespace Zoolandia.Animals
         public string dominance { get; set; }
         public string gender {get; set; }      
 
-        public override void description ()
+        public override string description ()
         {
-            Console.WriteLine(" ");
+            return $"{base.description()}\n This Alaskan Wolf is the {this.dominance} {this.gender} of its pack!";
         }
     }
 }

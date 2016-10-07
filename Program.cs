@@ -7,39 +7,51 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
+           Animal animalInstance = null;
+            //I tried to instantiate a new animal here, create the name and eats properties here and do the writelog for the name and eats here so that I did not have to write those properties into each of the instances below but it would not work. 
             
-            Badger honeyBadger = new Badger ();
+            switch (args[0])
             {
-                honeyBadger.name = "Killer";
-                honeyBadger.weight = "40 lbs";
-                honeyBadger.height = "30 inches";
-                honeyBadger.origin = "North America";
-                honeyBadger.aggressive = "ferocious";
-                honeyBadger.diet = "small babies";
-            }
-            Console.WriteLine($"{honeyBadger.name} the Honey Badger resides in {honeyBadger.origin} and averages {honeyBadger.weight} and {honeyBadger.height}. It is known for it's {honeyBadger.aggressive} mentality and eating {honeyBadger.diet}.");
+                case "badger":
+                    animalInstance = new Badger
+                    {
+                        name = args[1],
+                        weight = args[2],
+                        height = args[3],
+                        origin = args[4],
+                        aggressive = args[5],
+                        diet = args[6]
 
-            Elephant indianElephant = new Elephant ();
-            {
-                indianElephant.name = "Lucky";
-                indianElephant.weight = "1 ton";
-                indianElephant.height = "10 ft";
-                indianElephant.origin = "India";
-                indianElephant.tuskSize = "large";
-                indianElephant.color = "brown";
-            }
-            Console.WriteLine($"{indianElephant.name} the {indianElephant.color} Indian Elephant resides in {indianElephant.origin} and averages {indianElephant.weight} and {indianElephant.height}. It is known for it's {indianElephant.tuskSize} tusks and peaceful ways.");
+                    };
+                    Console.WriteLine(animalInstance.description());
+                    break;
 
-            Wolf alaskanWolf = new Wolf ();
-            {
-                alaskanWolf.name = "Night Crawler";
-                alaskanWolf.weight = "80 lbs";
-                alaskanWolf.height = "50 inches";
-                alaskanWolf.origin = "Alaska";
-                alaskanWolf.dominance = "Alpha";
-                alaskanWolf.gender = "male";
+                case "elephant":
+                    animalInstance = new Elephant
+                    {
+                        name = args[1],
+                        weight = args[2],
+                        height = args[3],
+                        origin = args[4],
+                        tuskSize = args[5],
+                        color = args[6]
+                    };
+                    Console.WriteLine(animalInstance.description());
+                    break;
+
+                case "wolf":
+                    animalInstance = new Wolf
+                    {
+                        name = args[1],
+                        weight = args[2],
+                        height = args[3],
+                        origin = args[4],
+                        dominance = args[5],
+                        gender = args[6]
+                    };
+                    Console.WriteLine(animalInstance.description());
+                    break;
             }
-            Console.WriteLine($"{alaskanWolf.name} the Alaskan Wolf resides in {alaskanWolf.origin} and averages {alaskanWolf.weight} and {alaskanWolf.height}. {alaskanWolf.name} is the {alaskanWolf.dominance} {alaskanWolf.gender} of its pack!");
         }
     }
 }
