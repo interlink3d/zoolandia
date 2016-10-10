@@ -9,69 +9,72 @@ namespace Zoolandia
         public static void Main(string[] args)
         {
 
-            Fulgens Burgler = new Fulgens ()
+            Fulgens aPanda = new Fulgens ()
             {
                 name = "Burgler",
                 loves = "playing",
                 origin = "Himalayas",
                 age = 5,
             };
-            Console.WriteLine($@"{Burgler.name} the {Burgler.scientificName} otherwise known as {Burgler.commonName} resides in the {Burgler.origin}. 
-            It is known for its love of {Burgler.loves}. 
-            {Burgler.name} is {Burgler.age} years old. 
-            {Burgler.climbTrees} 
-            {Burgler.climb(24, "tree")} 
-            {Burgler.catLike} 
-            {Burgler.sleep(2)} 
-            {Burgler.description()} ");
+            
+            Bicornis aRhyno = new Bicornis ()
+            {
+                name = "Rhydon",
+                loves = "chasing people",
+                origin = "African grasslands",
+                age = 17,
+            };
 
-            // Mustelidae Edgar = new Mustelidae ("Edgar")
-            // {
-            //     height = "30 inches",
-            //     origin = "North America",
-            //     aggressive = "ferocious",
-            //     diet = "small babies",
-            //     age = 29
-            // };
-            // Console.WriteLine($"{Edgar.name} the {Edgar.age} year old Honey Badger resides in {Edgar.origin} and averages {Edgar.height}. He is known for his {Edgar.aggressive} mentality and eating {Edgar.diet}.");
+             Sumatranus aElephant = new Sumatranus ()
+            {
+                name = "Lucky",
+                loves = "attention",
+                origin = "Asian Islands",
+                age = 13,
+            };
 
-            //  Mustelidae Jose = new Mustelidae (25)
-            // {
-            //     name = "Jose",
-            //     height = "30 inches",
-            //     origin = "North America",
-            //     aggressive = "ferocious",
-            //     diet = "small babies"
-            // };
-            // Console.WriteLine($"{Jose.name} the {Jose.age} year old Honey Badger resides in {Jose.origin} and averages {Jose.height}. He is known for his {Jose.aggressive} mentality and eating {Jose.diet}.");
+            Imbricata aTurtle = new Imbricata ()
+            {
+                name = "Dude",
+                loves = "relaxing",
+                origin = "tropical area oceans",
+                age = 21,
+            };
 
-            // Mustelidae Gio = new Mustelidae ("Gio", 26)
-            // {
-            //     height = "30 inches",
-            //     origin = "North America",
-            //     aggressive = "ferocious",
-            //     diet = "small babies"
-            // };
-            // Console.WriteLine($"{Gio.name} the {Gio.age} year old Honey Badger resides in {Gio.origin} and averages {Gio.height}. He is known for his {Gio.aggressive} mentality and eating {Gio.diet}.");
+            Pardus aLeopard = new Pardus ()
+            {
+                name = "Spot",
+                loves = "the hunt",
+                origin = "Northern China into Russia",
+                age = 13,
+            };
 
+            Mendiculus aPenguin = new Mendiculus ()
+            {
+                name = "Happy",
+                loves = "acrobatics",
+                origin = "Galapagos Islands",
+                age = 3,
+            };
+            
+            Console.WriteLine($@"
+            {aPanda.name} the {aPanda.scientificName} otherwise known as {aPanda.commonName} resides in the {aPanda.origin}. 
+            It is known for its love of {aPanda.loves}. 
+            {aPanda.name} is {aPanda.age} years old. 
+            {aPanda.climbTrees} 
+            {aPanda.climb(24, "tree")} 
+            {aPanda.catLike} 
+            {aPanda.sleep(2)} 
+            {aPanda.description()} ");
 
-            // Elephantidae indianElephant = new Elephantidae ()
-            // {
-            //     height = "10 ft",
-            //     origin = "India",
-            //     tuskSize = "large",
-            //     color = "brown"
-            // };
-            // Console.WriteLine($"{indianElephant.name} the {indianElephant.color} Indian Elephant resides in {indianElephant.origin} and averages {indianElephant.height}. It is known for it's {indianElephant.tuskSize} tusks and peaceful ways.");
-
-            // Canidae alaskanWolf = new Canidae ()
-            // {
-            //     height = "50 inches",
-            //     origin = "Alaska",
-            //     dominance = "Alpha",
-            //     gender = "male"
-            // };
-            // Console.WriteLine($"{alaskanWolf.description()}\n {alaskanWolf.name} is originally from {alaskanWolf.origin} and averages {alaskanWolf.height} tall.");
+            Console.WriteLine($@"
+            It is {aRhyno.hasHorns} that they have horns. {aRhyno.fight(8, "attacked")}
+            {aElephant.herdAnimal} {aElephant.eat("plants")}
+            {aTurtle.livesLong} {aTurtle.swim(21, "coral reef")}
+            {aLeopard.bigCat}. Likes to hunt {aLeopard.hunts}
+            Penguins love {aPenguin.loves}. {aPenguin.swim(15, "boat")}
+            ");
+            
         }
     }
 }

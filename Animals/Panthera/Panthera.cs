@@ -4,7 +4,7 @@ namespace Zoolandia.Animals
 {
     class Panthera: Animal
     {
-        public string bigCat = "Is bigger than a domesticated cat";
+        public string bigCat = $"The Leopard is bigger than a domesticated cat";
 
         public virtual string climb() 
         {

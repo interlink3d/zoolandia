@@ -15,7 +15,7 @@ namespace Zoolandia.Animals
         }
         public virtual string swim(double speed, string destination)
         {
-            return $"Animal is swimming at {speed} mph towards {destination}";
+            return $"{this.name} is swimming at {speed} mph towards {destination}";
         }
     }
 }
