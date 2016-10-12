@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    class Diceros: Animal
+    class Diceros : Animal
     {
         public bool hasHorns = true;
         public virtual string fight() 
@@ -12,10 +12,6 @@ namespace Zoolandia.Animals
         public virtual string fight(double speed)
         {
             return $"Animal is charging its adversary at {speed} mph.";
-        }
-        public virtual string fight(double speed, string cause)
-        {
-            return $"They can charge at up to {speed} mph when {cause}.";
         }
     }
 }

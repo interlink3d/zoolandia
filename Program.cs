@@ -1,8 +1,5 @@
 ﻿using System;
 using Zoolandia.Animals;
-using Zoolandia.Species;
-using Zoolandia.Genus;
-
 
 namespace Zoolandia
 {
@@ -11,70 +8,35 @@ namespace Zoolandia
         public static void Main(string[] args)
         {
 
-            Fulgens aPanda = new Fulgens ()
-            {
-                name = "Burgler",
-                loves = "playing",
-                origin = "Himalayas",
-                age = 5,
-            };
+            Fulgens aPanda = new Fulgens ();
             
-            Bicornis aRhyno = new Bicornis ()
-            {
-                name = "Rhydon",
-                loves = "chasing people",
-                origin = "African grasslands",
-                age = 17,
-            };
+            Bicornis aRhyno = new Bicornis ();
+        
+            Sumatranus aElephant = new Sumatranus ();
 
-             Sumatranus aElephant = new Sumatranus ()
-            {
-                name = "Lucky",
-                loves = "attention",
-                origin = "Asian Islands",
-                age = 13,
-            };
+            Imbricata aTurtle = new Imbricata ();
 
-            Imbricata aTurtle = new Imbricata ()
-            {
-                name = "Dude",
-                loves = "relaxing",
-                origin = "tropical area oceans",
-                age = 21,
-            };
-
-            Pardus aLeopard = new Pardus ()
-            {
-                name = "Spot",
-                loves = "the hunt",
-                origin = "Northern China into Russia",
-                age = 13,
-            };
-
-            Mendiculus aPenguin = new Mendiculus ()
-            {
-                name = "Happy",
-                loves = "acrobatics",
-                origin = "Galapagos Islands",
-                age = 3,
-            };
+            Pardus aLeopard = new Pardus ();
+         
+            Mendiculus aPenguin = new Mendiculus ();
+         
             
             Console.WriteLine($@"
             {aPanda.name} the {aPanda.scientificName} otherwise known as {aPanda.commonName} resides in the {aPanda.origin}. 
             It is known for its love of {aPanda.loves}. 
             {aPanda.name} is {aPanda.age} years old. 
             {aPanda.climbTrees} 
-            {aPanda.climb(24, "tree")} 
+            {aPanda.climb(24)} 
             {aPanda.catLike} 
             {aPanda.sleep(2)} 
             {aPanda.description()} ");
 
             Console.WriteLine($@"
-            It is {aRhyno.hasHorns} that they have horns. {aRhyno.fight(8, "attacked")}
+            It is {aRhyno.hasHorns} that they have horns. {aRhyno.fight(8)}
             {aElephant.herdAnimal} {aElephant.eat("plants")}
-            {aTurtle.livesLong} {aTurtle.swim(21, "coral reef")}
+            {aTurtle.livesLong} {aTurtle.swim(21)}
             {aLeopard.bigCat}. Likes to hunt {aLeopard.hunts}
-            Penguins love {aPenguin.loves}. {aPenguin.swim(15, "boat")}
+            Penguins love {aPenguin.loves}. {aPenguin.swim(15)}
             ");
             
         }

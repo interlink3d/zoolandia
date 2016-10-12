@@ -1,8 +1,11 @@
-namespace Zoolandia.Genus
+namespace Zoolandia.Animals 
 {
-    public class Genus
+    public class Genus: TaxonomyTerm
     {
-        public string commonName {get; set;}
-        public string scientificName {get; set;}
+        public string genusName {get; set;}
+        public Genus (string genus)
+        {
+            this.genusName = genus;
+        }
     }
 }

@@ -8,6 +8,11 @@ namespace Zoolandia.Animals
         public string origin {get; set;}
         public string loves {get; set;}     
         public int age {get; set;}
+        public string diet {get; set;}
+        public Species species {get; set;}
+        public Genus genus {get; set;}
+        public string commonName {get; set;}
+        public string scientificName {get; set;} 
 
         public virtual string eat()
         {
