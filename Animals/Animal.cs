@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    public class Animal
+    public class Animal : IAnimal
     {
         public string name {get; set;}
         public string origin {get; set;}
@@ -30,9 +30,9 @@ namespace Zoolandia.Animals
         {
             return $"Animal likes to nap for {hours} hours.";
         }
-        public virtual string sleep(int hours, string location)
+        public virtual string reproduce()
         {
-            return $"Animal likes to nap for {hours} in the {location}.";
+            return $"Looks like {this.name} found a mate!";
         }
         public virtual string description ()
         {

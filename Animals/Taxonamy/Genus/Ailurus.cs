@@ -2,16 +2,16 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    class Ailurus : Animal
+    class Ailurus : Animal, IClimbing
     {
         public string climbTrees = "Most people don't know that these animals climb trees";
         public virtual string climb() 
         {
-            return "Animal is out climbing trees";
+            return $"{this.name} is out climbing trees";
         }
         public virtual string climb(double speed)
         {
-            return $"Animal climbed up the tree at {speed} mph.";
+            return $"{this.name} climbed up the tree at {speed} mph.";
         }
     }
 }

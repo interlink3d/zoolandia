@@ -32,10 +32,11 @@ namespace Zoolandia
             {aPanda.description()} ");
 
             Console.WriteLine($@"
-            It is {aRhyno.hasHorns} that they have horns. {aRhyno.fight(8)}
+            It is {aRhyno.hasHorns} that they have horns. {aRhyno.fight(8)} {aRhyno.running()}
             {aElephant.herdAnimal} {aElephant.eat("plants")}
             {aTurtle.livesLong} {aTurtle.swim(21)}
             {aLeopard.bigCat}. Likes to hunt {aLeopard.hunts}
+            {aLeopard.climb(3)} {aLeopard.reproduce()}
             Penguins love {aPenguin.loves}. {aPenguin.swim(15)}
             ");
             

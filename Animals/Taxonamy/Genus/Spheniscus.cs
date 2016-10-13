@@ -2,16 +2,16 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    class Spheniscus : Animal
+    class Spheniscus : Animal, ISwimming
     {
         public bool cantFly = true;
         public virtual string swim() 
         {
-            return "Animal is out swimming";
+            return $"{this.name} is out swimming";
         }
         public virtual string swim(double speed)
         {
-            return $"Animal is swimming at {speed} mph.";
+            return $"{this.name} is swimming at {speed} mph.";
         }
     }
 }

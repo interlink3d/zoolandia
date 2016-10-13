@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    class Pardus : Panthera
+    class Pardus : Panthera, IRunning
     {
         public Pardus ()
         {
@@ -21,6 +21,16 @@ namespace Zoolandia.Animals
         public override string description ()
         {
             return $"{this.name} lives in Zoolandia.";
+        }
+
+        public string running()
+        {
+            return $"{this.name} is out enjoying a run";
+        }
+
+        public string running(double speed)
+        {
+            return $"sdfsdf";
         }
     }
 }
