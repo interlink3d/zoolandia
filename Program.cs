@@ -1,5 +1,6 @@
 ﻿using System;
 using Zoolandia.Animals;
+using Zoolandia.Habitats;
 
 namespace Zoolandia
 {
@@ -19,6 +20,8 @@ namespace Zoolandia
             Pardus aLeopard = new Pardus ();
          
             Mendiculus aPenguin = new Mendiculus ();
+
+            Aquarium SaltWater = new Aquarium ();
          
             
             Console.WriteLine($@"
